@@ -27,7 +27,7 @@ app.listen(PORT,async ()=> {
 })
 
 app.get('/',(req,res)=> {
-    res.send('Welcome from basic template of node')
+    res.send('Welcome from basic templalate of node to heroku')
 })
 
 app.use(express.json())
