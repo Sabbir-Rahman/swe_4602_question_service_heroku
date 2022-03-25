@@ -15,4 +15,11 @@ const addQuestion = async (req, res) => {
   return res.status(200).json(response)
 }
 
-module.exports = { addQuestion }
+const viewQuestions = async (req, res) => {
+
+  const response = await questionService.find()
+
+  return res.status(200).json(response)
+}
+
+module.exports = { addQuestion, viewQuestions }
