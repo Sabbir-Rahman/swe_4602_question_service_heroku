@@ -1,10 +1,10 @@
 ###
-POST http://localhost:5002/order/create
+POST http://localhost:5000/question/create
 Content-Type: application/json 
 
 { 
-  "productId": "62115a7cd7fd542eadc2a88d",
-  "productName": "ABC product",
-  "quantity": 20,
-  "price": 100
+  "description": "This is a question",
+  "tag": "test",
+  "point": 1,
+  "options": ["ABC", "DEF", "GHI"]
 }

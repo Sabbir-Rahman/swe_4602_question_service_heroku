@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const PORT = process.env.PORT || 5000
 const basicRoutes = require('./routers/basicRouter')
-const orderRoutes = require('./routers/orderRouter') 
+const questionRoutes = require('./routers/questionRouter') 
 
 async function connect() {
   const dbUri = process.env.MONGODB_CONNECTION_URL
@@ -32,4 +32,4 @@ app.get('/',(req,res)=> {
 
 app.use(express.json())
 app.use('/basic',basicRoutes)
-app.use('/order', orderRoutes)
+app.use('/question', questionRoutes)
